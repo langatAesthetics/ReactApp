@@ -12,10 +12,10 @@ function Header() {
         setMenuOpen(!menuOpen)
     };
     return (
-        <header class="header">
-            <div class="logo">LA</div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <i class="fa-solid fa-bars"></i>
+        <header className="header">
+            <div className="logo">LA</div>
+            <div className="hamburger" onclick="toggleMenu()">
+                <i className="fa-solid fa-bars"></i>
             </div>
             <nav className={`navbar ${menuOpen ? 'show' : ''}`}>
                 <ul>
@@ -31,12 +31,12 @@ function Header() {
 
 function Hero() {
     return (
-        <section class="hero">
+        <section className="hero">
             <div><img src="" alt="Image" /></div>
-            <div class="hero-content">
+            <div className="hero-content">
                 <h2>W3Lcome to mY Site3</h2>
                 <p>hchb hb bhbxhdcb</p>
-                <button class="btn">Book Now</button>
+                <button className="btn">Book Now</button>
             </div>
         </section>
     )
@@ -60,15 +60,15 @@ function Services() {
 
         <section id="Services">
             <h2 style="text-align: center;">Services</h2>
-            <div class="card">
+            <div className="card">
                 <h2>Website Development</h2>
                 <p>Interractive, TResponsive Websites</p>
             </div>
-            <div class="card">
+            <div className="card">
                 <h2>App Dev</h2>
                 <p>Interractive Mobile Apps</p>
             </div>
-            <div class="card">
+            <div className="card">
                 <h2>UI/UX Design</h2>
                 <p>Graphic design</p>
             </div>
@@ -80,10 +80,10 @@ function Contact() {
     return (
         <section id="Contact">
             <h2 style="text-align: center;">Contact</h2>
-            <div class="card">
+            <div className="card">
                 <h2>Email<br /></h2>
             </div>
-            <div class="card">
+            <div className="card">
                 <h2>Mobile Phone</h2>
             </div>
         </section>
@@ -92,7 +92,7 @@ function Contact() {
 
 function Footer() {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <p>copyright 2025 | L Aesthetics</p>
         </footer>
     )
