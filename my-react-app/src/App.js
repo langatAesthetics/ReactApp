@@ -14,15 +14,15 @@ function Header() {
     return (
         <header className="header">
             <div className="logo">LA</div>
-            <div className="hamburger" onclick="toggleMenu()">
+            <div className="hamburger" onClick={toggleMenu}>
                 <i className="fa-solid fa-bars"></i>
             </div>
             <nav className={`navbar ${menuOpen ? 'show' : ''}`}>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,7 +32,7 @@ function Header() {
 function Hero() {
     return (
         <section className="hero">
-            <div><img src="" alt="Image" /></div>
+            <div><img src="" alt="Portrait of Duncan Langat" /></div>
             <div className="hero-content">
                 <h2>W3Lcome to mY Site3</h2>
                 <p>hchb hb bhbxhdcb</p>
@@ -59,7 +59,7 @@ function Services() {
     return (
 
         <section id="Services">
-            <h2 style="text-align: center;">Services</h2>
+            <h2 style= {{textAlign : "center" }}>Services</h2>
             <div className="card">
                 <h2>Website Development</h2>
                 <p>Interractive, TResponsive Websites</p>
@@ -79,7 +79,7 @@ function Services() {
 function Contact() {
     return (
         <section id="Contact">
-            <h2 style="text-align: center;">Contact</h2>
+            <h2 style={{textAlign: "center"}}>Contact</h2>
             <div className="card">
                 <h2>Email<br /></h2>
             </div>
